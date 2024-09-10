@@ -144,12 +144,12 @@ class UserApiController extends Controller
             if ($user) {
                 return response()->json([
                     'success' => true,
-                    'user' => $user
+                    'message' => ' berhasil edit data'
                 ],201);
             }else{
                 return response()->json([
                     'success' => false,
-                    'message' => 'gagal tambah data'
+                    'message' => 'gagal edit data data'
                 ],409);
             }
         }
