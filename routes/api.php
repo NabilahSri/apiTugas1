@@ -19,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::post('/login',[UserApiController::class,'login']);
-Route::post('/logout/{id}',[UserApiController::class,'logout']);
-Route::post('/user/show',[UserApiController::class,'show']);
+Route::get('/logout/{id}',[UserApiController::class,'logout']);
+Route::get('/user/show',[UserApiController::class,'show']);
 Route::post('/user/add',[UserApiController::class,'add']);
-Route::post('/user/show/{id}',[UserApiController::class,'showId']);
-Route::post('/user/edit/{id}',[UserApiController::class,'edit']);
-Route::post('/user/delete/{id}',[UserApiController::class,'delete']);
+Route::get('/user/show/{id}',[UserApiController::class,'showId']);
+Route::get('/user/edit/{id}',[UserApiController::class,'edit']);
+Route::get('/user/delete/{id}',[UserApiController::class,'delete']);
